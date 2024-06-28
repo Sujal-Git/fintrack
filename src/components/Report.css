@@ -1,0 +1,27 @@
+/* Report.css */
+.expense-report-card {
+    background-color: #2a2a3d;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #eaeaea;
+    text-align: center;
+  }
+  
+  .expense-report-card h2 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 1.5em;
+  }
+  
+  .report-details p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .report-details p strong {
+    color: #5a4a9c;
+  }
+  

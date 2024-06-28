@@ -1,0 +1,110 @@
+/* Home.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a2e;
+    color: #eaeaea;
+  }
+  h5{
+    color:#d7d7d7;
+    position: absolute;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    left: 85%;
+    text-decoration: none;
+    top: 90%;
+  }
+  h5 a{
+    text-decoration: none;
+    color: #e0e0e0;
+  }
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .home-header .logo {
+    cursor: pointer;
+    font-size: 3em;
+    color: #ffffff; /* Unique color for the logo */
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+  }
+  
+  .home-content {
+    z-index: 1;
+  }
+  
+  .quote-container {
+    margin-bottom: 40px;
+  }
+  
+  .quote {
+    font-size: 2.5em; /* Larger font size for prominence */
+    margin: 0 20px;
+    color: #c8c8c8;
+    font-family: 'Playfair Display', serif; /* Stylish font */
+    font-weight: bold;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .home-button {
+    padding: 15px 30px; /* Larger padding */
+    border: none;
+    border-radius: 25px;
+    background-color: #5a4a9c;
+    color: #fff;
+    font-size: 1.2em; /* Larger font size */
+    font-family: 'Montserrat', sans-serif; /* Stylish font */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .home-button:hover {
+    background-color: #7e6bb3;
+    transform: translateY(-2px);
+  }
+  
+  .background-decor .ball {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.6;
+  }
+  
+  .ball1 {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg, #5a4a9c, #33334d);
+    top: 10%;
+    left: 20%;
+  }
+  
+  .ball2 {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(45deg, #5a4a9c, #7e6bb3);
+    bottom: 15%;
+    right: 15%;
+  }
+  
+  .ball3 {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(45deg, #5a4a9c, #444);
+    bottom: 20%;
+    left: 30%;
+  }
+  
