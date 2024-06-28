@@ -1,3 +1,51 @@
 h1{
     text-align: center;
 }
+/* Global Styles */
+body {
+    background-color: #1a1a2e;
+    color: #eaeaea;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Responsive Typography */
+  h1 {
+    color: #eaeaea;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5em;
+    margin: 5px auto;
+    width: fit-content;
+  }
+  
+  h1::first-letter {
+    font-size: 1.7em;
+    color: #5a4a9c;
+  }
+  
+  .main-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    flex-wrap: wrap; /* Allow items to wrap */
+    margin: 0 auto; /* Center content */
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.2em; /* Smaller font size on smaller screens */
+    }
+  
+    .main-wrap {
+      width: 90%;
+      flex-direction: column; /* Stack items vertically */
+    }
+  }
+  
