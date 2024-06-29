@@ -1,14 +1,14 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { supabase } from '../SupabaseClient';
 import { UserContext } from './UserContext';
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 import './Dashboard.css';
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
 
 const Dashboard = () => {
-  const url=useNavigate()
+  const navigate = useNavigate();
   const { user } = useContext(UserContext);
   const [title, setTitle] = useState('');
   const [amount, setAmount] = useState('');
@@ -36,7 +36,7 @@ const Dashboard = () => {
   }, [user]);
 
   const handleSubmit = async (e) => {
- e.preventDefault()
+    e.preventDefault();
     const { data, error } = await supabase
       .from('expenses')
       .insert([{ title, amount, date, user_id: user.id }]);
@@ -44,7 +44,7 @@ const Dashboard = () => {
     if (error) {
       console.error('Error adding expense:', error);
     } else {
-      setExpenses([...expenses, data[0]]);
+      setExpenses([...expenses, ...data]);
       setTitle('');
       setAmount('');
       setDate('');
@@ -89,7 +89,7 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard">
-      <header className="dashboard-header" onDoubleClick={()=>{url('/signout')}}>
+      <header className="dashboard-header" onDoubleClick={() => { navigate('/signout') }}>
         <h1><span>Welcome</span>, {user.email}</h1>
       </header>
       <div className="dashboard-content">
