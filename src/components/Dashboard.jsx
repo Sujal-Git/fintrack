@@ -90,7 +90,7 @@ const Dashboard = () => {
   return (
     <div className="dashboard">
       <header className="dashboard-header" onDoubleClick={() => { navigate('/signout') }}>
-        <h1><span>Welcome</span>, {user.email}</h1>
+        <h1><span>Welcome Back</span>, {user.email}</h1>
       </header>
       <div className="dashboard-content">
         <div className="form-and-summary">
